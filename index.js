@@ -32,7 +32,7 @@
 
 
 
-  // -------------主要程式-------------- //
+  // -------------起始程式-------------- //
 
   axios.get(INDEX_URL)
     .then((response) => {
@@ -50,7 +50,7 @@
   // -------------監聽器-------------- //
 
   genresBar.addEventListener('click', function (event) {
-    console.log(event.target.dataset.genres)
+    //console.log(event.target.dataset.genres)
     let moviegenres = Number(event.target.dataset.genres)
 
     let results = data.filter(
